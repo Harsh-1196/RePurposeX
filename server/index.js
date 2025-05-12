@@ -9,7 +9,22 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+const allowedOrigins = ['https://re-purpose-x.vercel.app'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // allow requests with no origin like mobile apps or curl
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  // credentials: true, // only needed if using cookies or sessions
+}));
+
+// Allow preflight requests
+app.options('*', cors());
 app.use(express.json());
 
 // ✅ Initialize Google Gemini API
