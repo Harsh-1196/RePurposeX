@@ -23,7 +23,7 @@ function App() {
     setResults({})
 
     try {
-      const response = await fetch("http://localhost:4000/api/repurpose", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/repurpose`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
