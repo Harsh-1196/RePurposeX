@@ -266,10 +266,10 @@ export default function LandingPage() {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           {[
-            { number: "10x", text: "Faster Content Creation" },
-            { number: "5M+", text: "Posts Generated" },
-            { number: "50k+", text: "Happy Creators" }
-          ].map((stat, index) => (
+           { number: "🔍", text: "Smart Content Repurposing\nPaste any text or URL – instantly transform it into platform-ready content with AI." },
+           { number: "🌐", text: "Platform-Tailored Output\nAutomatically adjusts tone, length, and style for Twitter, LinkedIn, Instagram, and more." },
+           { number: "⚙️", text: "Built for Efficiency\nDesigned to reduce time spent reformatting and rewriting content – publish faster, smarter." }
+         ].map((stat, index) => (
             <motion.div
               key={index}
               className="p-6 rounded-2xl bg-gradient-to-b from-purple-900/20 to-transparent border border-purple-500/20"
@@ -380,7 +380,7 @@ export default function LandingPage() {
               },
               {
                 name: "Pro",
-                price: "$29",
+                price: "Coming Soon",
                 description: "Best for content creators",
                 features: ["Unlimited posts", "Advanced AI features", "All social platforms", "Analytics dashboard", "Priority support"],
                 popular: true,
