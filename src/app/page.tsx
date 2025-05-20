@@ -468,7 +468,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="relative z-10 py-10 text-center text-gray-400 text-sm border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6">
-          <p>© {new Date().getFullYear()} RePurposeX • Built with ❤️ by Shashank Bhargava & Team</p>
+          <p>© {new Date().getFullYear()} RePurposeX • Built with ❤️</p>
         </div>
       </footer>
     </main>
